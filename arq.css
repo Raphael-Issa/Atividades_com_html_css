@@ -33,6 +33,7 @@ body {
 .nav-links {
     display: flex; /* Define o layout como flexível */
     list-style: none; /* Remove marcadores da lista */
+    flex-wrap: wrap; /* Permite que os links quebrem para a próxima linha se necessário */
     gap: 20px; /* Espaçamento entre os itens */
 }
 
@@ -59,13 +60,14 @@ body {
 .cabecalho {
     display: flex; /* Define o layout como flexível */
     align-items: center;/* Alinha verticalmente os itens ao centro */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    justify-content: center; /* Centraliza o conteúdo */
     gap: 30px;/* Espaçamento entre a imagem e o texto */
     padding: 30px;/* Espaçamento interno da seção */
     background-color: #ffffff;/* Cor de fundo da seção */
     border-radius: 50px;/* Bordas arredondadas */
     box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
-    margin-left: 30px; /* Espaçamento à esquerda da seção */
-    margin-right: 30px; /* Espaçamento à direita da seção */
+    margin: 15px; /* Espaçamento externo da seção */
 }
 
 
@@ -78,7 +80,6 @@ body {
     /* Borda e Sombra */
     border: 3px solid #38bdf8; /* Borda azul clara */
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Sombra suave */
-    margin-left: 425px;
 }
 
 .info-perfil {
