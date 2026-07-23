@@ -1,0 +1,136 @@
+body {
+  background-color: #f4f6f9; /* Cor de fundo clara e neutra */
+  font-family: Arial, sans-serif; /* Fonte padrão para o corpo do documento */
+  color: #313030; /* Cor do texto principal */
+}
+
+/* Reseta margens padrões */
+* {
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo de largura e altura */
+    font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif; /* Define uma fonte padrão para todos os elementos */
+}
+
+    /* Estilização da barra de navegação */
+.navbar {
+    display: flex; /* Define o layout como flexível */
+    justify-content: space-between;     /* Distribui os itens com espaço entre eles */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    background-color: #1a1a1a;  /* Cor de fundo escura para contraste */
+    padding: 15px 30px; /* Espaçamento interno da barra de navegação */
+    margin-bottom: 30px; /* Espaçamento abaixo da barra de navegação */
+}
+
+    /* Estilo do Logotipo */
+.logo {
+    color: #ffffff; /* Cor do texto do logotipo */
+    font-size: 24px; /* Tamanho da fonte do logotipo */
+    font-weight: bold; /* Negrito para destaque */
+}
+
+    /* Estrutura da lista de links */
+.nav-links {
+    display: flex; /* Define o layout como flexível */
+    list-style: none; /* Remove marcadores da lista */
+    flex-wrap: wrap; /* Permite que os links quebrem para a próxima linha se necessário */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+    /* Estilo dos links individuais */
+.nav-links a {
+    display: block; /* Define o link como um bloco para melhor área de clique */
+    color: #ffffff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    padding: 8px 12px; /* Espaçamento interno dos links */
+    transition: all 0.3s ease; /* Transição suave para efeitos de hover */
+    border-radius: 4px; /* Bordas arredondadas para os links */
+}
+
+    /* Efeito ao passar o mouse */
+.nav-links a:hover {
+    background-color: #007bff; /* Cor de fundo azul ao passar o mouse */
+    color: #ffffff; /* Mantém a cor do texto branca */
+}
+
+
+
+
+.cabecalho {
+    display: flex; /* Define o layout como flexível */
+    align-items: center;/* Alinha verticalmente os itens ao centro */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    justify-content: center; /* Centraliza o conteúdo */
+    gap: 30px;/* Espaçamento entre a imagem e o texto */
+    padding: 30px;/* Espaçamento interno da seção */
+    background-color: #ffffff;/* Cor de fundo da seção */
+    border-radius: 50px;/* Bordas arredondadas */
+    box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    margin: 15px; /* Espaçamento externo da seção */
+}
+
+
+#foto {
+    width: 200px; /* Largura da foto */
+    height: 200px;   /* Altura da foto */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço definido */
+    border-radius: 50%; /* Foto redonda */
+    
+    /* Borda e Sombra */
+    border: 3px solid #38bdf8; /* Borda azul clara */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Sombra suave */
+}
+
+.info-perfil {
+    
+    display: flex; /* Define o layout como flexível */
+    flex-direction: column; /* Organiza os itens em coluna (verticalmente) */
+    align-items: center; /* Alinha horizontalmente os itens ao centro */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+
+#nome {
+    margin: 0; /* Remove a margem padrão */
+    font-size: 26px; /* Tamanho da fonte */
+    color: #0f172a; /* Cor do texto */
+}
+
+    
+#subtitulo-perfil {
+    margin-top: 8px; /* Pequeno espaço abaixo do nome */
+    color: #64748b; /* Cor cinza para o subtítulo */
+    font-size: 16px; /* Tamanho da fonte do subtítulo */
+}
+
+
+
+.secao {
+    margin: 30px 0; /* Espaçamento vertical entre as seções */
+    padding: 40px; /* Espaçamento interno da seção */
+    background-color: #ffffff; /* Cor de fundo da seção */
+    border-radius: 50px; /* Bordas arredondadas */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    margin-left: 30px; /* Espaçamento à esquerda da seção */
+    margin-right: 30px; /* Espaçamento à direita da seção */
+}
+
+
+.secao h2 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título da seção */
+    color: #0f172a; /* Cor do título */
+    font-size: 22px; /* Tamanho da fonte do título */
+    border-bottom: 2px solid #38bdf8; /* Linha azul clara abaixo do título */
+    padding-bottom: 10px; /* Espaçamento interno abaixo do título */
+}
+
+
+.secao ul {
+    list-style-type: disc; /* Tipo de marcador da lista */
+    padding-left: 20px; /* Espaçamento à esquerda da lista */
+}
+
+.secao:hover {
+    background-color: #f3f5f5;
+}
