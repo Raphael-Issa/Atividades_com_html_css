@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adm</title>
+
+    <Style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .pai{
+        
+        display: flex;
+        min-height: 100vh;
+
+        .conteudo-direito {
+        display: flex;
+        flex-direction: column; /* Faz o topo ficar EM CIMA do main */
+        width: 100%;            /* Faz ocupar o restante da tela */
+        }
+
+        nav{
+        display: flex; /* Define o contêiner como um flex container */
+        flex-direction: column; /* Define a direção dos itens como coluna */
+        justify-content: flex-start; /* Distribui os itens igualmente ao longo do eixo principal */
+        background-color: #0c0c0c; /* Define a cor de fundo da barra de navegação */
+        color: #fff; /* Define a cor do texto da barra de navegação */
+        padding: 20px; /* Adiciona espaçamento interno à barra de navegação */
+        gap: 15px; /* Adiciona espaçamento entre os itens */
+
+
+            .Menu {
+                font-size: 24px; /* Define o tamanho da fonte do título do menu */
+                font-weight: bold; /* Define o peso da fonte como negrito */
+            }
+            
+
+            ul{
+                list-style: none; /* Remove os marcadores da lista */
+                display: flex; /* Define a lista como um flex container */
+                flex-direction: column; /* Define a direção dos itens como coluna */
+                gap: 10px; /* Adiciona espaçamento entre os itens da lista */
+            
+
+                li{
+                    cursor: pointer; /* Define o cursor como pointer ao passar o mouse sobre os itens da lista */
+                    border-radius: 5px; /* Adiciona bordas arredondadas aos itens da lista */
+                    padding: 5px;
+                    background-color: #505050; /* Define a cor de fundo da lista */
+                    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo ao passar o mouse */
+
+                    &:hover{
+                        background-color: #333; /* Altera a cor de fundo ao passar o mouse sobre os itens da lista */
+                    } /*fim*/
+                }/*fim*/
+            }/*fim*/
+        }/* FIM nav 1*/
+
+
+        .main {
+            display: flex;
+            flex-direction: column; 
+            gap: 20px; /* Cria um espaço entre a primeira linha e a segunda */
+            padding: 20px;
+        }
+
+        .conteudo-direito{
+            margin-left: 20px;
+        }
+
+ 
+        .linha-cards, 
+        .linha-conteudo {
+            display: flex;
+            flex-direction: row; /* Coloca os cards/conteúdos lado a lado */
+            gap: 40px;           /* Espaço entre cada card */
+        }
+
+
+        .inicio_adm{
+            background-color: hwb(0 94% 6%);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-right: 2px;
+        }
+
+        .secao{
+            background-color: hwb(0 94% 6%);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 5px;
+            flex: 1;
+            text-align: center;
+            margin-left: -20px;
+        }
+
+        .outra-secao{
+            background-color: hwb(194 0% 0%);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            flex: 0 1 140px;
+            padding: 40px;
+            margin-left: -20px;
+
+
+        }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+    </Style>
+
+</head>
+<body>
+
+
+    <div class = "pai">
+
+        <nav class="navbar">
+            <div class="Menu">Menu</div>
+            <ul class="Menu-lists">
+                <li>Inicio</li>
+                <li>Perfil</li>
+                <li>Produtos</li>
+                <li>Clientes</li>
+                <li>Configurações</li>
+            </ul>
+        </nav>
+
+        <div class="conteudo-direito">
+
+            <header class = "inicio_tudo">
+                <div class = "inicio_adm">
+                    <h1>Painel Administrativo</h1>
+                    <p>Exercicio de flexbox</p>
+                </div>
+            </header>
+        
+ 
+        <main class="main">
+
+            <div class="linha-cards">
+                <section id="Clientes" class="secao">
+                    <h3>120</h3>
+                    <p>Clientes</p>
+                </section>
+
+                <section id="Produtos" class="secao">
+                    <h3>120</h3>
+                    <p>Produtos</p>
+                </section>
+
+                <section id="Vendidos" class="secao">
+                    <h3>120</h3>
+                    <p>Vendidos</p>
+                </section>
+            </div>
+
+            <div class="linha-conteudo">
+                <section class="outra-secao">
+                    <p></p>
+                </section>
+                <section class="outra-secao">
+                    <p></p>
+                </section>
+                <section class="outra-secao">
+                    <p></p>
+                </section>                
+                <section class="outra-secao">
+                    <p></p>
+                </section>                
+                <section class="outra-secao">
+                    <p></p>
+                </section>
+                <section class="outra-secao">
+                    <p></p>
+                </section>
+            </div>
+
+        </main>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
